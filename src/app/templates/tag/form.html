@@ -1,0 +1,63 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong><%= TITLE %></strong> <span class="model-op"></span> <span class="model-id"></span></h4>
+			</div>
+			<div class="modal-body" role="notification">
+				
+				<div class="noty-container"></div>
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#<%= ID %>-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-general">
+				
+						<h3>General</h3>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="type" class="control-label">Tag type</label>
+									<input id="type" name="type" type="text" class="form-control select2-control form-white" data-placeholder="Choose Tag Type" form="<%= ID %>-form">
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="value" class="control-label">Title</label>
+									<input id="value" name="value" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<input id="published" name="published" type="checkbox" form="<%= ID %>-form">
+									<label for="published">Published</label>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<form id="<%= ID %>-form">
+					<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+					<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

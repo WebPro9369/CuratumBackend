@@ -1,0 +1,20 @@
+<td class="ui-sortable-handle">
+	<i class="icon-cursor-move"></i>
+</td>
+<td><%= unitId || '&mdash;' %></td>
+<td><%= _value || '&mdash;' %></td>
+<td>
+	<%= quantityAvailable || '&mdash;' %>
+	<% if (this.model._quantityIncrement < 0) { %>
+		<span class="text-danger">(<%= this.model._quantityIncrement %>)</span>
+	<% } else if (this.model._quantityIncrement > 0) { %>
+		<span class="text-success">(<%= this.model._quantityIncrement %>)</span>
+	<% } %>
+</td>
+<td><%= _salePrice || '&mdash;' %></span></td>
+<td class="text-right">
+	<% if (this.model.isNew()) { %>
+		<a href="#" class="delete btn btn-sm btn-danger" data-action="remove" data-id="<%= this.model.cid %>" rel="<%= ID %>"><i class="icons-office-52"></i></a>
+	<% } %>
+	<a href="#" class="edit btn btn-sm btn-default" data-action="update" data-id="<%= this.model.cid %>" rel="<%= ID %>"><i class="icon-note"></i></a>
+</td>

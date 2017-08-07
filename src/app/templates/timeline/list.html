@@ -1,0 +1,40 @@
+<div class="panel">
+	<div class="panel-content table-responsive">
+		<div class="m-b-20">
+			<button class="btn btn-sm btn-dark" data-action="create" rel="<%= ID %>"><i class="fa fa-plus"></i> Add New <%= TITLE %></button>
+		</div>
+		<div class="form-inline">
+			<div class="row" role="navigation">
+				<div class="col-xs-9" role="filter">
+					<div class="form-group">
+						<input id="type" name="type" type="hidden" data-placeholder="Choose Type" style="min-width: 300px; width: 300px;">
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="navbar-collapse">
+						<div class="dataTables_filter" role="search"></div>
+					</div>
+				</div>
+			</div>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th class="col-md-6">Title</th>
+						<th class="col-md-2">Type</th>
+						<th class="col-md-1">Primary</th>
+						<th class="col-md-1">Private</th>
+						<th class="col-md-1">Published</th>
+						<th class="col-md-1">Actions</th>
+					</tr>
+				</thead>
+				<tbody role="items">
+				</tbody>
+			</table>
+			<div class="row" role="pagination"></div>
+		</div>
+	</div>
+</div>
+
+<div role="form" rel="<%= ID %>"></div>
+
+<form rel="timelineDraw" role="form"></form>

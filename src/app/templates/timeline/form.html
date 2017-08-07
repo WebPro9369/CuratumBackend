@@ -1,0 +1,184 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong><%= TITLE %></strong> <span class="model-op"></span> <span class="model-id"></span></h4>
+			</div>
+			<div class="modal-body" role="notification">
+				
+				<div class="noty-container"></div>
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#<%= ID %>-form-timeline" data-toggle="tab"><i class="icon-info"></i> Timeline</a></li>
+					<li><a href="#<%= ID %>-form-image" data-toggle="tab"><i class="icon-picture"></i> Image</a></li>
+					<li><a href="#<%= ID %>-form-product" data-toggle="tab"><i class="icon-layers"></i> Products</a></li>
+					<li><a href="#<%= ID %>-form-promo-discount" data-toggle="tab"><i class="icon-basket-loaded"></i> Promo Discount</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-timeline">
+				
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator">
+								
+								<h3>General</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="type" class="control-label">Type</label>
+											<input id="type" name="type" type="hidden" class="form-control select2-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="subject" class="control-label">Title</label>
+											<input id="subject" name="subject" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="subtitle" class="control-label">Subtitle</label>
+											<input id="subtitle" name="subtitle" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="desc" class="control-label">Description</label>
+											<textarea id="desc" name="desc" class="form-control multilanguage-control form-white" rows="5" form="<%= ID %>-form"></textarea>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="primary" name="primary" type="checkbox" form="<%= ID %>-form">
+											<label for="primary">Is main?</label>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="private" name="private" type="checkbox" form="<%= ID %>-form">
+											<label for="private">Don’t show in the app</label>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="discounted" name="discounted" type="checkbox" form="<%= ID %>-form">
+											<label for="discounted">Is discounted?</label>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="published" name="published" type="checkbox" form="<%= ID %>-form">
+											<label for="published">Is published?</label>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Additional attributes</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="sharingLink" class="control-label">Sharing Link</label>
+											<input id="sharingLink" name="sharingLink" type="text" class="form-control link-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="tapstreamLink" class="control-label">Tapstream Link</label>
+											<input id="tapstreamLink" name="tapstreamLink" type="text" class="form-control link-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="fontColor" class="control-label">Font color</label>
+											<input id="fontColor" name="fontColor" type="text" class="form-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<h3>Availability</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="availableCountry" class="control-label">Available Countries</label>
+											<input id="availableCountry" name="availableCountry" type="hidden" class="form-control select2-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+								
+						</div>
+					
+					</div>
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-image" name="image" form="<%= ID %>-form">
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-product">
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-promo-discount">
+						
+						<h3>Auth required image</h3>
+						<div name="authRequiredImage" form="<%= ID %>-form"></div>
+						
+						<h3>Discount image</h3>
+						<div name="discountImage" form="<%= ID %>-form"></div>
+						
+						<h3>Won image</h3>
+						<div name="wonImage" form="<%= ID %>-form"></div>
+				
+					</div>
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<form id="<%= ID %>-form">
+					<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+					<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,700 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong><%= TITLE %></strong> <span class="model-op"></span> <span class="model-id"></span></h4>
+			</div>
+			<div class="modal-body" role="notification">
+				
+				<div class="noty-container"></div>
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#<%= ID %>-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+					<li><a href="#<%= ID %>-form-additional" data-toggle="tab"><i class="icon-direction"></i> Additional</a></li>
+					<li><a href="#<%= ID %>-form-timeline" data-toggle="tab"><i class="icon-clock"></i> Timeline</a></li>
+					<li><a href="#<%= ID %>-form-specification" data-toggle="tab"><i class="icon-list"></i> Specification</a></li>
+					<li><a href="#<%= ID %>-form-product-image" data-toggle="tab"><i class="icon-picture"></i> Images</a></li>
+					<li><a href="#<%= ID %>-form-price-and-quantity" data-toggle="tab"><i class="icon-basket-loaded"></i> Price &amp; Availability</a></li>
+					<li><a href="#<%= ID %>-form-weight-and-dimension" data-toggle="tab"><i class="icon icons-arrows-21"></i> Weight &amp; Dimension</a></li>
+					<li><a href="#<%= ID %>-form-shipping-and-taxes" data-toggle="tab"><i class="icon icon-rocket"></i> Shipping &amp; Taxes</a></li>
+					<li><a href="#<%= ID %>-form-linkshare" data-toggle="tab"><i class="icon-basket-loaded"></i> Linkshare bridge</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-general">
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="boutique" class="control-label">Boutique</label>
+									<input id="boutique" name="boutique" type="text" class="form-control select2-control" data-placeholder="Select Boutique">
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-10">
+								<div class="form-group">
+									<label for="productName" class="control-label">Name</label>
+									<input id="productName" name="productName" type="text" class="form-control">
+								</div>
+							</div>
+							
+							<div class="col-md-2">
+								<div class="form-group">
+									<label for="curationDate" class="control-label">Curation date</label>
+									<input id="curationDate" name="curationDate" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="brand" class="control-label">Brand <small class="text-muted">If you specify this value will replace "Brand name" field below</small></label>
+									<input id="brand" name="brand" type="text" class="form-control select2-control" data-placeholder="Select Brand">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="brandName" class="control-label">Brand name</label>
+									<input id="brandName" name="brandName" type="text" class="form-control">
+								</div>
+							</div>
+							
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="category" class="control-label">Category</label>
+									<input id="category" name="category" type="text" class="form-control">
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="productDescription" class="control-label">Description</label>
+									<textarea id="productDescription" name="productDescription" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="availableCountry" class="control-label">Available Countries</label>
+									<input id="availableCountry" name="availableCountry" type="hidden" class="form-control">
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="productUrl" class="control-label">Product URL</label>
+									<input id="productUrl" name="productUrl" type="text" class="form-control">
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="tags" class="control-label">Tags</label>
+									<input id="tags" name="tags" type="hidden" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="socialHashtags" class="control-label">Social hashtags</label>
+									<input id="socialHashtags" name="socialHashtags" type="hidden" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="archetypes" class="control-label">Archetypes</label>
+									<input id="archetypes" name="archetypes" type="hidden" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="weatherTags" class="control-label">Weather tags</label>
+									<input id="weatherTags" name="weatherTags" type="hidden" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+									
+							<div class="col-md-12">
+								<div class="form-group">
+									<input id="isValid" name="isValid" type="checkbox">
+									<label for="isValid">Product activity</label>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="row">
+									
+							<div class="col-md-12">
+								<div class="form-group">
+									<input id="isValid_1_0_5" name="isValid_1_0_5" type="checkbox">
+									<label for="isValid_1_0_5">Product activity for version 1.0.5</label>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-additional">
+						
+						<div class="row column-seperation">
+					
+							<div class="col-md-6 line-separator">
+								
+								<h3>Detail</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="detailTitle" class="control-label">Details Title</label>
+											<input id="detailTitle" name="detailTitle" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="detailDescription" class="control-label">Short Description</label>
+											<textarea id="detailDescription" name="detailDescription" class="form-control" rows="5"></textarea>
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="detailSpecsTitle" class="control-label">Long Description Title</label>
+											<input id="detailSpecsTitle" name="detailSpecsTitle" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="detailSpecsDescription" class="control-label">Long Description</label>
+											<textarea id="detailSpecsDescription" name="detailSpecsDescription" class="form-control" rows="5"></textarea>
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="sharingLink" class="control-label">Sharing Link</label>
+											<input id="sharingLink" name="sharingLink" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="productTimelineTitle" class="control-label">Timeline Title</label>
+											<input id="productTimelineTitle" name="productTimelineTitle" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="actionCopy" class="control-label">Action Copy</label>
+											<input id="actionCopy" name="actionCopy" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="actionUrl" class="control-label">Action URL</label>
+											<input id="actionUrl" name="actionUrl" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+							
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Detail picture</h3>
+								
+								<div class="row">
+								
+									<div class="col-md-12">
+										<div class="form-group">
+											<div id="product-form-detail-picture"></div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="pictureCredit" class="control-label">Credit Picture</label>
+											<input id="pictureCredit" name="pictureCredit" type="text" class="form-control">
+										</div>							
+									</div>
+								
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="pictureCreditURL" class="control-label">Credit Picture URL</label>
+											<input id="pictureCreditURL" name="pictureCreditURL" type="text" class="form-control">
+										</div>							
+									</div>
+								
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="interview" class="control-label">Interview</label>
+											<input id="interview" name="interview" type="text" class="form-control select2-control" data-placeholder="Select Interview">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="productPictureAlignment" class="control-label">Alignment</label>
+											<input id="productPictureAlignment" name="productPictureAlignment" type="text" class="form-control select2-control" data-placeholder="Picture alignment">
+										</div>
+									</div>
+								
+								</div>
+								
+								<h3>Color</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="color" class="control-label">Color</label>
+											<input id="color" name="color" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="pronoun" class="control-label">Pronoun</label>
+											<input id="pronoun" name="pronoun" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+							</div>
+								
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-timeline">
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-specification">
+						
+						<div class="row column-seperation">
+							
+							<div class="col-md-3 line-separator">
+								
+								<h3>Specification image</h3>
+								
+								<div class="row">
+								
+									<div class="col-md-12">
+										<div class="form-group">
+											<div id="product-form-spec-image"></div>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-md-9">
+								
+								<h3>Product specification</h3>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea id="specs" name="specs" class="form-control" rows="5"></textarea>
+										</div>
+									</div>
+									
+								</div>
+							
+							</div>
+							
+						</div>
+					
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-product-image">
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-price-and-quantity">
+						
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator" id="product-form-size">
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Product price</h3>
+								
+								<div class="row">
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="price" class="control-label">Base price</label>
+											<div class="prepend-icon">
+												<input id="price" name="price" type="text" class="form-control">
+												<i class="fa fa-usd"></i>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="salePrice" class="control-label">Sale price</label>
+											<div class="prepend-icon">
+												<input id="salePrice" name="salePrice" type="text" class="form-control">
+												<i class="fa fa-usd"></i>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-weight-and-dimension">
+						
+						<div class="row column-seperation">
+						
+							<div class="col-md-4 line-separator">
+								
+								<h3>Product weight</h3>
+								
+								<div class="row">
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="productWeightValue" class="control-label">Value</label>
+											<input id="productWeightValue" name="productWeight" rel="value" type="text" class="form-control" placeholder="Value">
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="productWeightUnits" class="control-label">Units</label>
+											<input id="productWeightUnits" name="productWeight" rel="units" type="text" class="form-control select2-control" data-placeholder="Units">
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-md-8">
+								
+								<h3>Product dimensions</h3>
+								
+								<div class="row">
+									
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="productDimensionsWidth" class="control-label">Width</label>
+											<input id="productDimensionsWidth" name="productDimensions" rel="width" type="text" class="form-control" placeholder="Width">
+										</div>
+									</div>
+									
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="productDimensionsHeight" class="control-label">Height</label>
+											<input id="productDimensionsHeight" name="productDimensions" rel="height" type="text" class="form-control" placeholder="Height">
+										</div>
+									</div>
+									
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="productDimensionsLength" class="control-label">Length</label>
+											<input id="productDimensionsLength" name="productDimensions" rel="length" type="text" class="form-control" placeholder="Length">
+										</div>
+									</div>
+									
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="productDimensionsUnits" class="control-label">Units</label>
+											<input id="productDimensionsUnits" name="productDimensions" rel="units" type="text" class="form-control select2-control" data-placeholder="Units">
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-shipping-and-taxes">
+						
+						<div class="row column-seperation">
+						
+							<div class="col-md-6">
+								
+								<h3>Shipping</h3>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="shippingType" class="control-label">Shipping type</label>
+											<input id="shippingType" name="shippingType" type="text" class="form-control select2-control" data-placeholder="Choose Shipping type">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="flatRate" class="control-label">Flat rate</label>
+											<div class="prepend-icon">
+												<input id="flatRate" name="flatRate" type="text" class="form-control" placeholder="Flat rate">
+												<i class="fa fa-usd"></i>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="flatRateInternational" class="control-label">International flat rate</label>
+											<div class="prepend-icon">
+												<input id="flatRateInternational" name="flatRateInternational" type="text" class="form-control" placeholder="International flat rate">
+												<i class="fa fa-usd"></i>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="europeFlatRate" class="control-label">Europe flat rate</label>
+											<div class="prepend-icon">
+												<input id="europeFlatRate" name="europeFlatRate" type="text" class="form-control" placeholder="Europe flat rate">
+												<i class="fa fa-usd"></i>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="worldFlatRate" class="control-label">World flat rate</label>
+											<div class="prepend-icon">
+												<input id="worldFlatRate" name="worldFlatRate" type="text" class="form-control" placeholder="World flat rate">
+												<i class="fa fa-usd"></i>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="internationalShipping" name="internationalShipping" type="checkbox">
+											<label for="internationalShipping">International shipping</label>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Taxes</h3>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="tic" class="control-label">TIC Category</label>
+											<input id="tic" name="tic" type="text" class="form-control select2-control" data-placeholder="Choose TIC Category">
+										</div>
+									</div>
+								
+								</div>
+								
+							</div>
+						
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-linkshare">
+						
+						<div class="row column-seperation">
+						
+							<div class="col-md-6 line-separator">
+								
+								<div class="row">
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="linkshareMerchantId" class="control-label">Merchant</label>
+											<input id="linkshareMerchantId" name="linkshareMerchantId" type="text" class="form-control select2-control" data-placeholder="Choose Merchant">
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="linkshareProductId" class="control-label">Product Id</label>
+											<input id="linkshareProductId" name="linkshareProductId" type="text" class="form-control">
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<button type="button" class="btn btn-primary" data-action="product-form-linkshare-update"><i class="fa fa-search"></i> Update</button>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+							</div>
+						
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="modal-footer bg-dark">
+				<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+				<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

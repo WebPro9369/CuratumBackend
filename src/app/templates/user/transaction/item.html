@@ -1,0 +1,3 @@
+<td><%= createdAt ? moment(createdAt).format(DATETIME_FORMAT) : '&mdash;' %></td>
+<td><%= value ? numeral(value).format(MONEY_FORMAT) : '&mdash;' %></td>
+<td><%= (typeItem = _.findWhere(this.model.typeEnum, {id: type})) ? typeItem.text : '&mdash;' %></td>

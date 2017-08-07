@@ -1,0 +1,510 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong><%= TITLE %></strong> <span class="model-op"></span> <span class="model-id"></span></h4>
+			</div>
+			<div class="modal-body" role="notification">
+				
+				<div class="noty-container"></div>
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#<%= ID %>-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+					<li><a href="#<%= ID %>-form-additional" data-toggle="tab"><i class="icon-direction"></i> Additional</a></li>
+					<li><a href="#<%= ID %>-form-timeline" data-toggle="tab"><i class="icon-clock"></i> Timeline</a></li>
+					<li><a href="#<%= ID %>-form-detail-image" data-toggle="tab"><i class="icon-picture"></i> Detail image</a></li>
+					<li><a href="#<%= ID %>-form-specification-image" data-toggle="tab"><i class="icon-picture"></i> Specification image</a></li>
+					<li><a href="#<%= ID %>-form-image" data-toggle="tab"><i class="icon-picture"></i> Additional Images</a></li>
+					<li><a href="#<%= ID %>-form-sku" data-toggle="tab"><i class="icon-basket-loaded"></i> SKU</a></li>
+					<!-- <li><a href="#<%= ID %>-form-shipping-and-availability" data-toggle="tab"><i class="icon icon-rocket"></i> Shipping &amp; Availability</a></li> -->
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-general">
+						
+						<div class="row column-seperation">
+					
+							<div class="col-md-6 line-separator">
+								
+								<h3>General</h3>
+								
+								<div class="row">
+									<div class="col-md-8">
+										<div class="form-group">
+											<label for="productId" class="control-label">Product ID</label>
+											<input id="productId" name="productId" type="text" class="form-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="curationDate" class="control-label">Curation date</label>
+											<input id="curationDate" name="curationDate" type="text" class="form-control datepicker-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+						
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="subject" class="control-label">Pronoun</label>
+											<input id="subject" name="subject" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="title" class="control-label">Name</label>
+											<input id="title" name="title" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="desc" class="control-label">Description</label>
+											<textarea id="desc" name="desc" class="form-control multilanguage-control form-white" rows="5" form="<%= ID %>-form"></textarea>
+										</div>
+									</div>
+								</div>
+								
+								<h3>Links</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="productLink" class="control-label">Product link</label>
+											<input id="productLink" name="productLink" type="text" class="form-control link-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="sharingLink" class="control-label">Sharing Link</label>
+											<input id="sharingLink" name="sharingLink" type="text" class="form-control link-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<h3>Availability</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="availableCountry" class="control-label">Available Countries</label>
+											<input id="availableCountry" name="availableCountry" type="hidden" class="form-control select2-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="published" name="published" type="checkbox" form="<%= ID %>-form">
+											<label for="published">Is published?</label>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Related items</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="category" class="control-label">Category</label>
+											<input id="category" name="category" type="text" class="form-control select2-control form-white" data-placeholder="Select Category" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="boutique" class="control-label">Boutique</label>
+											<input id="boutique" name="boutique" type="text" class="form-control select2-control form-white" data-placeholder="Select Boutique" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="brand" class="control-label">Brand</label>
+											<input id="brand" name="brand" type="text" class="form-control select2-control form-white" data-placeholder="Select Brand" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="interview" class="control-label">Interview</label>
+											<input id="interview" name="interview" type="text" class="form-control select2-control form-white" data-placeholder="Select Interview" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<h3>Tags</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="productTags" class="control-label">Product tags</label>
+											<input id="productTags" name="productTags" type="hidden" class="form-control select2-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="hashTags" class="control-label">Social hashtags</label>
+											<input id="hashTags" name="hashTags" type="hidden" class="form-control select2-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="archetypeTags" class="control-label">Archetypes</label>
+											<input id="archetypeTags" name="archetypeTags" type="hidden" class="form-control select2-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="weatherTags" class="control-label">Weather tags</label>
+											<input id="weatherTags" name="weatherTags" type="hidden" class="form-control select2-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-additional">
+						
+						<div class="row column-seperation">
+					
+							<div class="col-md-6 line-separator">
+								
+								<h3>Detail</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="detailSubject" class="control-label">Details Title</label>
+											<input id="detailSubject" name="detailSubject" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="detailDesc" class="control-label">Short Description</label>
+											<textarea id="detailDesc" name="detailDesc" class="form-control multilanguage-control form-white" rows="5" form="<%= ID %>-form"></textarea>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="specSubject" class="control-label">Long Description Title</label>
+											<input id="specSubject" name="specSubject" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="specDesc" class="control-label">Long Description</label>
+											<textarea id="specDesc" name="specDesc" class="form-control multilanguage-control form-white" rows="5" form="<%= ID %>-form"></textarea>
+										</div>
+									</div>
+								</div>
+								
+								<h3>Links</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="actionLink" class="control-label">Action link</label>
+											<input id="actionLink" name="actionLink" type="text" class="form-control link-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Product specification</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="specDesc2" class="control-label">Product specification</label>
+											<textarea id="specDesc2" name="specDesc2" class="form-control multilanguage-control form-white" rows="5" form="<%= ID %>-form"></textarea>
+										</div>
+									</div>
+								</div>
+								
+								<h3>Color</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="timelineTitle" class="control-label">Timeline Title</label>
+											<input id="timelineTitle" name="timelineTitle" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="color" class="control-label">Color</label>
+											<input id="color" name="color" type="text" class="form-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+							</div>
+								
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-timeline" form="<%= ID %>-form">
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-detail-image" name="detailImage" form="<%= ID %>-form">
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-specification-image" name="specImage" form="<%= ID %>-form">
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-image" name="image" form="<%= ID %>-form">
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-sku" name="unit" form="<%= ID %>-form">
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-weight-and-dimension">
+						
+						<div class="row column-seperation">
+						
+							<div class="col-md-4 line-separator">
+								
+								<h3>Product weight</h3>
+								
+								<div class="row">
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="productWeightValue" class="control-label">Value</label>
+											<input id="productWeightValue" name="productWeight" rel="value" type="text" class="form-control form-white" placeholder="Value" form="<%= ID %>-form">
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="productWeightUnits" class="control-label">Units</label>
+											<input id="productWeightUnits" name="productWeight" rel="units" type="text" class="form-control select2-control form-white" data-placeholder="Units" form="<%= ID %>-form">
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-md-8">
+								
+								<h3>Product dimensions</h3>
+								
+								<div class="row">
+									
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="productDimensionsWidth" class="control-label">Width</label>
+											<input id="productDimensionsWidth" name="productDimensions" rel="width" type="text" class="form-control form-white" placeholder="Width" form="<%= ID %>-form">
+										</div>
+									</div>
+									
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="productDimensionsHeight" class="control-label">Height</label>
+											<input id="productDimensionsHeight" name="productDimensions" rel="height" type="text" class="form-control form-white" placeholder="Height" form="<%= ID %>-form">
+										</div>
+									</div>
+									
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="productDimensionsLength" class="control-label">Length</label>
+											<input id="productDimensionsLength" name="productDimensions" rel="length" type="text" class="form-control form-white" placeholder="Length" form="<%= ID %>-form">
+										</div>
+									</div>
+									
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="productDimensionsUnits" class="control-label">Units</label>
+											<input id="productDimensionsUnits" name="productDimensions" rel="units" type="text" class="form-control select2-control form-white" data-placeholder="Units" form="<%= ID %>-form">
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-shipping-and-availability">
+						
+						<div class="row column-seperation">
+						
+							<div class="col-md-6">
+								
+								<h3>Shipping</h3>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="shippingType" class="control-label">Shipping type</label>
+											<input id="shippingType" name="shippingType" type="text" class="form-control select2-control" data-placeholder="Choose Shipping type" form="<%= ID %>-form">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="flatRate" class="control-label">Flat rate</label>
+											<div class="prepend-icon">
+												<input id="flatRate" name="flatRate" type="text" class="form-control" placeholder="Flat rate" form="<%= ID %>-form">
+												<i class="fa fa-usd"></i>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="flatRateInternational" class="control-label">International flat rate</label>
+											<div class="prepend-icon">
+												<input id="flatRateInternational" name="flatRateInternational" type="text" class="form-control" placeholder="International flat rate" form="<%= ID %>-form">
+												<i class="fa fa-usd"></i>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="europeFlatRate" class="control-label">Europe flat rate</label>
+											<div class="prepend-icon">
+												<input id="europeFlatRate" name="europeFlatRate" type="text" class="form-control" placeholder="Europe flat rate" form="<%= ID %>-form">
+												<i class="fa fa-usd"></i>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="worldFlatRate" class="control-label">World flat rate</label>
+											<div class="prepend-icon">
+												<input id="worldFlatRate" name="worldFlatRate" type="text" class="form-control" placeholder="World flat rate" form="<%= ID %>-form">
+												<i class="fa fa-usd"></i>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="internationalShipping" name="internationalShipping" type="checkbox" form="<%= ID %>-form">
+											<label for="internationalShipping">International shipping</label>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Taxes</h3>
+								
+								<div class="row">
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="tic" class="control-label">TIC Category</label>
+											<input id="tic" name="tic" type="text" class="form-control select2-control" data-placeholder="Choose TIC Category" form="<%= ID %>-form">
+										</div>
+									</div>
+								
+								</div>
+								
+							</div>
+						
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="modal-footer bg-dark">
+				<form id="<%= ID %>-form">
+					<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+					<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

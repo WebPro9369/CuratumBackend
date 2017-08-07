@@ -1,0 +1,70 @@
+<h3>General</h3>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="form-group">
+			<label for="unitId" class="control-label">Code</label>
+			<input id="unitId" name="unitId" type="text" class="form-control form-white" form="<%= ID %>-form">
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="form-group">
+			<label for="value" class="control-label">SKU Types &amp; Values</label>
+			<input id="value" name="value" type="text" class="form-control select2-control form-white" form="<%= ID %>-form" data-placeholde="Choose SKU Types &amp; Values">
+		</div>
+	</div>
+</div>
+
+<h3>Quantity</h3>
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="form-group">
+			<label class="control-label">Available</label>
+			<p name="quantityAvailable" class="form-control form-white" form="<%= ID %>-form"></p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label class="control-label">Limit</label>
+			<p name="quantityLimit" class="form-control form-white" form="<%= ID %>-form"></p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label for="quantityIncrement" class="control-label">Add/remove amount</label>
+			<input id="quantityIncrement" name="quantityIncrement" type="text" class="form-control form-white" form="<%= ID %>-form">
+		</div>
+	</div>
+</div>
+
+<h3>Price</h3>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="form-group">
+			<label for="basePrice" class="control-label">Base</label>
+			<input id="basePrice" name="basePrice" type="text" class="form-control currency-control form-white" form="<%= ID %>-form">
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="form-group">
+			<label for="salePrice" class="control-label">Sale</label>
+			<input id="salePrice" name="salePrice" type="text" class="form-control currency-control form-white" form="<%= ID %>-form">
+		</div>
+	</div>
+</div>
+
+<hr/>
+
+<form id="<%= ID %>-form">
+	<div class="m-t-20">
+		<button class="btn btn-sm btn-dark" type="submit" rel="<%= ID %>"><i class="fa fa-plus"></i> Update</button>
+	</div>
+</form>

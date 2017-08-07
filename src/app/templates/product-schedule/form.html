@@ -1,0 +1,31 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong><%= TITLE %></strong> <span class="model-op"></span> <span class="model-id"></span></h4>
+			</div>
+			<div class="modal-body" role="notification">
+				
+				<div class="noty-container"></div>
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#<%= ID %>-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-general" name="assignment">
+					</div>
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<button type="button" class="btn btn-danger btn-embossed pull-left" data-action="remove" rel="<%= ID %>">Remove</button>
+				<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+				<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

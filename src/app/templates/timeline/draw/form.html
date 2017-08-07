@@ -1,0 +1,90 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong>Draw promo discount</strong></h4>
+			</div>
+			<div class="modal-body">
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a data-target="#timeline-draw-form-general"><i class="icon-info"></i> General</a></li>
+					<li><a data-target="#timeline-draw-form-winners"><i class="icon-users"></i> Winners</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="timeline-draw-form-general">
+						
+						<div class="row">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">Number of participants <small>(amount of users have viewed this timeline)</small></label>
+									<p name="totalCount" type="text" class="form-control">&nbsp;</p>
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="winnerCount" class="control-label">Number of winners <small>(amount of users which should win)</small></label>
+									<input id="winnerCount" name="winnerCount" type="text" class="form-control">
+								</div>
+							</div>
+						
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="winAmount" class="control-label">Win amount, <small>USD</small></label>
+									<input id="winAmount" name="winAmount" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="notificationMessage" class="control-label">Notification message <small>(leave empty in order to doesn't send push notification to winner)</small></label>
+									<textarea id="notificationMessage" name="notificationMessage" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						
+						</div>
+								
+					</div>
+					
+					
+					<div class="tab-pane fade" id="timeline-draw-form-winners">
+						
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Username</th>
+									<th>Full name</th>
+									<th>Phone</th>
+									<th>Balance</th>
+									<th>Result</th>
+								</tr>
+							</thead>
+							<tbody role="items">
+							</tbody>
+						</table>
+						
+					</div>
+					
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<button type="submit" class="btn btn-primary btn-embossed">Next</button>
+				<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

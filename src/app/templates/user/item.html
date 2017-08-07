@@ -1,0 +1,8 @@
+<td><%= username || '&mdash;' %></td>
+<td><%= fullName || '&mdash;' %></td>
+<td><%= phoneNumber || '&mdash;' %></td>
+<td><%= balance ? numeral(balance).format(MONEY_FORMAT) : '&mdash;' %></td>
+<td class="text-right">
+	<a href="#" class="edit btn btn-sm btn-default" data-action="update" data-id="<%= id %>" rel="<%= ID %>" title="Update"><i class="icon-note"></i></a>
+	<a href="#" class="edit btn btn-sm btn-default" data-action="view" data-id="<%= id %>" rel="<%= ID %>" title="View"><i class="icon-eye"></i></a>
+</td>

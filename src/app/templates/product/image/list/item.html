@@ -1,0 +1,15 @@
+<img src="<%= image.url %>"/>
+<% if (this.type === 'form') { %>
+	<figcaption>
+		<button class="btn btn-danger" type="button" data-action="product-image-remove"><i class="icons-office-52"></i> Remove</button>
+	</figcaption>
+<% } %>
+<% if (this.type === 'form') { %>
+	<figcaption class="selected">
+		<button class="btn btn-icon btn-default" type="button" data-action="product-image-select"><i class="icon-pin"></i></button>
+	</figcaption>
+<% } else { %>
+	<figcaption class="selected">
+		<i class="icon-pin"></i>
+	</figcaption>
+<% } %>

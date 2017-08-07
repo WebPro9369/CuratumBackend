@@ -1,0 +1,25 @@
+<td><%= username || '&mdash;' %></td>
+<td><%= fullName || '&mdash;' %></td>
+<td><%= phoneNumber || '&mdash;' %></td>
+<td>
+	<% if (!_.isEmpty(this.model._award) && this.model._award.balance) { %>
+		<%= numeral(this.model._award.balance).format(MONEY_FORMAT) %>
+	<% } else if (balance) { %>
+		<%= numeral(balance).format(MONEY_FORMAT) %>
+	<% } else { %>
+		 &mdash;
+	<% } %>
+</td>
+<td>
+	<% if (!_.isEmpty(this.model._award)) { %>
+		
+		<% if (this.model._award.state === true) { %>
+			<span class="text-success">User successfully awarded</span>
+		<% } else { %>
+			<span class="text-danger" title="<%= this.model._award.message || '' %>">Award user failed</span>
+		<% } %>
+	
+	<% } else { %>
+		&mdash;
+	<% } %>
+</td>

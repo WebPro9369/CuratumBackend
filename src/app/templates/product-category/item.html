@@ -1,0 +1,9 @@
+<td><%= title._text || '&mdash;' %></td>
+<% if (published) { %>
+	<td class="text-success">Yes</td>
+<% } else { %>
+	<td class="text-danger">No</td>
+<% } %>
+<td class="text-right">
+	<a href="#" class="edit btn btn-sm btn-default" data-action="update" data-id="<%= id %>" rel="<%= ID %>"><i class="icon-note"></i></a>
+</td>

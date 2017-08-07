@@ -1,0 +1,11 @@
+<td class="ui-sortable-handle">
+	<i class="icon-cursor-move"></i>
+</td>
+<td><%= code || '&mdash;' %></td>
+<td><span class="active" lang="<%= title._language %>"><%= title._text || '&mdash;' %></span></td>
+<td class="text-right">
+	<% if (this.model.isNew()) { %>
+		<a href="#" class="delete btn btn-sm btn-danger" data-action="remove" data-id="<%= this.model.cid %>" rel="<%= ID %>"><i class="icons-office-52"></i></a>
+	<% } %>
+	<a href="#" class="edit btn btn-sm btn-default" data-action="update" data-id="<%= this.model.cid %>" rel="<%= ID %>"><i class="icon-note"></i></a>
+</td>

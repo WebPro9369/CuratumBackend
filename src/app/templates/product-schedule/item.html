@@ -1,0 +1,1 @@
+<%= date && (value = moment.utc(date)) && value.isValid() ? value.format(value.date() === 1 ? DATE_FORMAT_MONTH : DATE_FORMAT_DAY) : '&mdash;' %>

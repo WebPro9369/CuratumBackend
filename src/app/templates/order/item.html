@@ -1,0 +1,41 @@
+<td><%= orderNumber ? orderNumber : '&mdash;' %></td>
+<td><%= createdAt ? moment(createdAt).format('MMM D, YYYY') : '&mdash;' %></td>
+<td><%= name || '&mdash;' %></td>
+<td>
+	<% if (_.isObject(recipient) && recipient.valid === true) { %>
+		<%= _.isObject(recipient) ? _.compact([(_.isArray(recipient.StreetLines) ? recipient.StreetLines.join(' ') : null), recipient.City, recipient.StateOrProvinceCode, recipient.CountryCode]).join(', ') : '&mdash;' %>
+	<% } else if (_.isObject(recipientBeforeValidation)) { %>
+		<%= _.isObject(recipientBeforeValidation) ? _.compact([(_.isArray(recipientBeforeValidation.StreetLines) ? recipientBeforeValidation.StreetLines.join(' ') : null), recipientBeforeValidation.City, recipientBeforeValidation.StateOrProvinceCode, recipientBeforeValidation.CountryCode]).join(', ') : '&mdash;' %>
+	<% } else { %>
+		<%= address %>
+	<% } %>
+</td>
+<td><%= email || '&mdash;' %></td>
+<td>
+	<% if (_.isObject(recipient) && recipient.valid === true) { %>
+		<%= recipient && recipient.PostalCode ? recipient.PostalCode : '&mdash;' %>
+	<% } else if (_.isObject(recipientBeforeValidation)) { %>
+		<%= recipientBeforeValidation && recipientBeforeValidation.PostalCode ? recipientBeforeValidation.PostalCode : '&mdash;' %>
+	<% } else { %>
+		<%= zip %>
+	<% } %>
+</td>
+<td>
+	<% if (product) { %>
+		<a href="#" data-action="product-view" data-id="<%= id %>"><i class="icon-eye"></i><%= product.productName %></a>
+	<% } else { %>
+		&mdash;
+	<% } %>
+</td>
+<td><%= productSize ? productSize.title : '&mdash;' %></td>
+<td><%= status ? status : '&mdash;' %></td>
+<td><%= oldVersion === true ? 'Yes' : 'No' %></td>
+<td>
+	<% if (status === 'process') { %>
+		<a href="#" class="edit btn btn-sm btn-default" data-action="order-status" data-value="shipped" title="Mark order as &laquo;Shipped&raquo;">Mark order as &laquo;Shipped&raquo;</a>
+	<% } else if (status === 'shipped') { %>
+		<a href="#" class="edit btn btn-sm btn-default" data-action="order-status" data-value="returned" title="Mark order as &laquo;Returned&raquo;">Mark order as &laquo;Returned&raquo;</a>
+	<% } else { %>
+		&mdash;
+	<% } %>
+</td>

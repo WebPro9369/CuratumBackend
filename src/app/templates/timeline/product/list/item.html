@@ -1,0 +1,23 @@
+<td><input name="selected" type="checkbox"></td>
+<td><%= curationDate ? moment.utc(curationDate).subtract(7, 'h').format('MMM D, YYYY') : '&mdash;' %></td>
+<td>
+	<% if (boutique) { %>
+		<a href="#" data-action="boutique-view" data-id="<%= id %>"><i class="icon-eye"></i> <%= boutique.boutiqueName || '&mdash;' %></a>
+	<% } else { %>
+		&mdash;
+	<% } %>
+</td>
+<td><%= productName || '&mdash;' %></td>
+<td><%= price %></td>
+<td><%= quantityAvailable %></td>
+<td><%= !_.isEmpty(productSize) ? productSize.join(', ') : '&mdash;' %></td>
+<td>
+	<% if (brand) { %>
+		<a href="#" data-action="brand-view" data-id="<%= id %>"><i class="icon-eye"></i> <%= brand.brandName || '&mdash;' %></a>
+	<% } else if (brandName) { %>
+		<%= brandName %>
+	<% } else { %>
+		&mdash;
+	<% } %>
+</td>
+<td><%= category || '&mdash;' %></td>

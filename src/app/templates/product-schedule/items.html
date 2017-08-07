@@ -1,0 +1,9 @@
+<% _.each(rows, function (row) { %>
+	<tr>
+		<% _.each(row, function (item) { %>
+			<td <% if (item.inRange) { %>data-date="<%= item.date %>"<% } else { %>class="active text-muted"<% } %>>
+				<div><%= item.title %></div>
+			</td>
+		<% }); %>
+	</tr>
+<% }); %>
