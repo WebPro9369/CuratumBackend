@@ -1,0 +1,138 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong><%= TITLE %></strong> <span class="model-op"></span> <span class="model-id"></span></h4>
+			</div>
+			<div class="modal-body" role="notification">
+				
+				<div class="noty-container"></div>
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#<%= ID %>-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+					<li><a href="#<%= ID %>-form-detail" data-toggle="tab"><i class="icon-info"></i> Detail</a></li>
+					<li><a href="#<%= ID %>-form-logo" data-toggle="tab"><i class="icon-picture"></i> Logo</a></li>
+					<li><a href="#<%= ID %>-form-image" data-toggle="tab"><i class="icon-picture"></i> Image</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-general">
+				
+						<h3>General</h3>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="subject" class="control-label">Card Name</label>
+									<input id="subject" name="subject" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="title" class="control-label">Brand Name</label>
+									<input id="title" name="title" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="desc" class="control-label">Credit</label>
+									<textarea id="desc" name="desc" class="form-control multilanguage-control form-white" rows="5" form="<%= ID %>-form"></textarea>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<input id="published" name="published" type="checkbox" form="<%= ID %>-form">
+									<label for="published">Published</label>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-detail">
+						
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator">
+						
+								<h3>Expanded screen</h3>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="detailTitle" class="control-label">Article Title</label>
+											<input id="detailTitle" name="detailTitle" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="detailDesc" class="control-label">Article</label>
+											<textarea id="detailDesc" name="detailDesc" class="form-control multilanguage-control form-white" rows="5" form="<%= ID %>-form"></textarea>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+							
+							<div class="col-md-6">
+						
+								<h3>Additional information</h3>
+						
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="link" class="control-label">Link</label>
+											<input id="link" name="link" type="text" class="form-control link-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="color" class="control-label">Color</label>
+											<input id="color" name="color" type="text" class="form-control form-white" form="<%= ID %>-form">
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						
+						</div>
+								
+					</div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-logo" name="logo" form="<%= ID %>-form"></div>
+					
+					
+					<div class="tab-pane fade" id="<%= ID %>-form-image" name="image" form="<%= ID %>-form"></div>
+					
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<form id="<%= ID %>-form">
+					<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+					<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

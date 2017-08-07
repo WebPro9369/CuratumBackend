@@ -1,0 +1,28 @@
+<% if (this.options.theme === THEME_TYPE_TABLE) { %>
+	<td><%= title._text || '&mdash;' %></td>
+	<% if (published) { %>
+		<td class="text-success">Yes</td>
+	<% } else { %>
+		<td class="text-danger">No</td>
+	<% } %>
+	<td class="text-right">
+		<a href="#" class="edit btn btn-sm btn-default" data-action="update" data-id="<%= id %>" rel="<%= ID %>"><i class="icon-note"></i></a>
+	</td>
+<% } else if (this.options.theme === THEME_TYPE_GALLERY) { %>
+	<div class="thumbnail">
+		<img src="<%= _thumb || ASSET_NO_IMAGE %>">
+		<div class="caption">
+			<h3 title="<%= title._text || '&mdash;' %>"><%= title._text || '&mdash;' %></h3>
+			<p>
+				<% if (published) { %>
+					<span class="text-success">published</span>
+				<% } else { %>
+					<span class="text-danger">unpublished</span>
+				<% } %>
+			</p>
+			<p>
+				<a href="#" class="edit btn btn-sm btn-default pull-right" data-action="update" data-id="<%= id %>" rel="<%= ID %>"><i class="icon-note"></i></a>
+			</p>
+		</div>
+	</div>
+<% } %>
