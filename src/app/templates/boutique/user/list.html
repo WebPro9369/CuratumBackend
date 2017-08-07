@@ -1,0 +1,31 @@
+<div class="row">
+							
+	<div class="col-md-12">
+		
+		<p class="alert bg-info" data-enabled="false"><i class="icon-bulb"></i> Security is not enabled. Click <a href="#" data-action="security" data-value="true" rel="<%= ID %>">here</a> to enable.</p>
+		<p class="alert bg-success" data-enabled="true"><i class="icon-bulb"></i> Security is enabled. You can <a href="#" data-action="security" data-value="false" rel="<%= ID %>">disable</a> security, but it will remove all associated users.</p>
+		
+		<hr data-enabled="true"/>
+		
+		<table class="table table-hover" data-enabled="true">
+			<thead>
+				<tr>
+					<th class="col-md-5">Email</th>
+					<th class="col-md-6">Full name</th>
+					<th class="col-md-1">Actions</th>
+				</tr>
+			</thead>
+			<tbody role="items">
+			</tbody>
+		</table>
+		
+		<div class="m-t-20 form-inline" data-enabled="true">
+			<div class="form-group">
+				<input name="username" class="form-control form-white ignore" placeholder="Enter user email" data-form="<%= ID %>-form">
+			</div>
+			<button class="btn btn-dark" data-action="create" rel="<%= ID %>"><i class="fa fa-plus"></i> Add New <%= TITLE %></button>
+		</div>
+	
+	</div>
+	
+</div>
