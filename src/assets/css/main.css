@@ -1,0 +1,45 @@
+/* Font stylesheet */
+@import url('//fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Theme stylesheet */
+@import "//fonts.googleapis.com/css?family=Lato:300,400,700,900";
+@import "//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700";
+@import "../icons/font-awesome/font-awesome.css";
+@import "../icons/line-icons/line-icons.css";
+@import "../icons/line-icons/simple-line-icons.css";
+@import "../icons/octicons/octicons.css";
+@import "../plugins/bootstrap/css/bootstrap.min.css";
+@import "../plugins/bootstrap/css/bootstrap-rtl.min.css";
+@import "../plugins/mcustom-scrollbar/mcustom_scrollbar.min.css";
+@import "../plugins/animation-css/animate.min.css";
+@import "../plugins/select2/select2.css";
+@import "../plugins/slick/slick.css";
+@import "../plugins/icheck/skins/all.css";
+@import "../plugins/bootstrap/css/jasny-bootstrap.css";
+@import "../plugins/bootstrap-loading/lada.min.css";
+@import "../plugins/bootstrap-tags-input/bootstrap-tagsinput.css";
+@import "../plugins/prettify/prettify.css";
+@import url('style.css');
+@import url('theme.css');
+@import url('ui.css');
+
+/* Theme layout 1 stylesheet */
+@import url('layout.css');
+
+/* Magnific Popup stylesheet */
+@import url('../plugins/magnific-popup/magnific-popup.css');
+
+/* iCheck */
+/*@import url('../plugins/icheck/skins/flat/flat.css');*/
+
+/* Mcustom Srollbar */
+/*@import url('../plugins/mcustom-scrollbar/mcustom_scrollbar.min.css');*/
+
+/* Bootstrap Multilanguage, Bootstrap Link */
+@import url('../plugins/bootstrap-multilanguage/bootstrap-multilanguage.css');
+@import url('../plugins/bootstrap-link/bootstrap-link.css');
+@import url('../plugins/bootstrap-currency/bootstrap-currency.css');
+
+/* Fix stylesheet */
+@import url('custom.css');
