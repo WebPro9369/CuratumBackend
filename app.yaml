@@ -1,0 +1,12 @@
+runtime: nodejs
+vm: true
+
+env_variables:
+  # --REQUIRED--
+  DATABASE_URI: mongodb://heroku_qjbwb6dq:ad1djgv937itqpcb3nqibds17@ds015398.mlab.com:15398/heroku_qjbwb6dq
+  APP_ID: curatum2-dev
+  MASTER_KEY: w196PoJBRS8ifgRqSD4H
+  # --OPTIONAL--
+  # FILE_KEY: <your-file-key>
+  PARSE_MOUNT: /parse
+  # CLOUD_CODE_MAIN:  
