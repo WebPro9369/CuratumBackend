@@ -1,0 +1,39 @@
+<div class="menu-title">
+	Content
+</div>
+<ul class="nav nav-sidebar">
+	<li rel="boutique"><a href="<%= app.router._generate('boutiqueList') %>"><i class="icon-basket"></i><span>Boutiques</span></a></li>
+	<li rel="brand"><a href="<%= app.router._generate('brandList') %>"><i class="icon-badge"></i><span>Brands</span></a></li>
+	<li rel="interview"><a href="<%= app.router._generate('interviewList') %>"><i class="icon-speech"></i><span>Interviews</span></a></li>
+	<li rel="timeline" class="nav-parent">
+		<a href="<%= app.router._generate('timelineList') %>"><i class="icon-clock"></i><span>Timelines</span><span class="fa arrow"></span></a>
+		<ul class="children collapse">
+			<% _.chain(TimelineType).filter(function (type) {return !_.isEmpty(_.intersection(type.roles, app.user.roles));}).each(function (type) { %>
+				<li rel="timeline/<%= type.id %>"><a href="<%= app.router._generate('timelineList', null, {type: type.id}) %>"><i class="icon-folder"></i><span><%= type.text %></span></a></li>
+			<% }).value(); %>
+		</ul>
+	</li>
+	<li rel="product" class="nav-parent">
+		<a href="<%= app.router._generate('productList') %>"><i class="icon-layers"></i><span>Products</span><span class="fa arrow"></span></a>
+		<ul class="children collapse">
+			<li rel="product/product-category"><a href="<%= app.router._generate('productCategoryList') %>"><i class="icon-folder"></i><span>Category</span></a></li>
+			<li rel="product/product-unit-type"><a href="<%= app.router._generate('productUnitTypeList') %>"><i class="icon-folder"></i><span>SKU Type</span></a></li>
+			<li rel="product/product-map"><a href="<%= app.router._generate('productMapList') %>"><i class="icon-folder"></i><span>Map <small class="text-muted">(not working)</small></span></a></li>
+			<li rel="product/product-schedule"><a href="<%= app.router._generate('productScheduleList') %>"><i class="icon-folder"></i><span>Schedule <small class="text-muted">(not working)</small></span></a></li>
+		</ul>
+	</li>
+	<li rel="order"><a href="<%= app.router._generate('orderList') %>"><i class="icon-basket-loaded"></i><span>Orders <small class="text-muted">(not working)</small></span></a></li>
+	<li rel="tag" class="nav-parent">
+		<a href="<%= app.router._generate('tagList') %>"><i class="icon-clock"></i><span>Tags</span><span class="fa arrow"></span></a>
+		<ul class="children collapse">
+			<% _.each(TagType, function (type) { %>
+				<li rel="tag/<%= type.id %>"><a href="<%= app.router._generate('tagList', null, {type: type.id}) %>"><i class="icon-folder"></i><span><%= type.text %></span></a></li>
+			<% }); %>
+		</ul>
+	</li>
+<div class="menu-title">
+	System
+</div>
+<ul class="nav nav-sidebar">
+	<li rel="user"><a href="<%= app.router._generate('userList') %>"><i class="icon-users"></i><span>User <small class="text-muted">(not working)</small></span></a></li>
+</ul>
