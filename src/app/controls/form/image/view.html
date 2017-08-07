@@ -1,0 +1,55 @@
+<div class="row column-seperation">
+	
+	<div class="col-md-4 line-separator">
+		
+		<h3>Image preview</h3>
+		
+		<figure>
+			<img src="<%= image.url() || '' %>"/>
+		</figure>
+		
+		<button class="btn btn-danger" type="button" data-action="image-remove"><i class="icons-office-52"></i> Remove</button>
+	
+	</div>
+	
+	<div class="col-md-8">
+		
+		<h3>Image properties</h3>
+		
+		<div class="row">
+	
+			<div class="col-md-12">
+				<div class="form-group">
+					<label for="title" class="control-label">Title</label>
+					<input id="title" name="title" type="text" class="form-control mlo-control form-white">
+				</div>
+			</div>
+		
+		</div>
+		
+		<div class="row">
+	
+			<div class="col-md-12">
+				<div class="form-group">
+					<label for="creditTitle" class="control-label">Credit Title</label>
+					<input id="creditTitle" name="creditTitle" type="text" class="form-control mlo-control form-white">
+				</div>
+			</div>
+		
+		</div>
+		
+		<div class="row">
+	
+			<div class="col-md-12">
+				<div class="form-group">
+					<label for="creditUrl" class="control-label">Credit URL</label>
+					<input id="creditUrl" name="creditUrl" type="text" class="form-control form-white">
+				</div>
+			</div>
+		
+		</div>
+		
+		
+	</div>
+
+</div>

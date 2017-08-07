@@ -1,0 +1,45 @@
+<div class="col-md-4 line-separator">
+	
+	<figure>
+		<img name="originalUrl" src="<%= ASSET_NO_IMAGE %>" form="<%= ID %>-form"/>
+		<figcaption>
+			<div name="alignment" class="pull-left">
+				
+			</div>
+			<div class="pull-right">
+				<div class="btn-group">
+					<button class="btn btn-xs btn-icon btn-danger" data-action="remove" rel="<%= ID %>" title="Remove image"><i class="material-icons">clear</i></button>
+				</div>
+			</div>
+		</figcaption>
+	</figure>
+
+</div>
+
+<div class="col-md-8">
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label for="title" class="control-label">Title</label>
+				<input id="title" name="title" type="text" class="form-control multilanguage-control form-white" form="<%= ID %>-form">
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label for="creditLink" class="control-label">Credit</label>
+				<input id="creditLink" name="creditLink" type="text" class="form-control link-control form-white" form="<%= ID %>-form">
+			</div>
+		</div>
+	</div>
+	
+	<form id="<%= ID %>-form">
+		<div class="m-t-20">
+			<button class="btn btn-sm btn-dark" type="submit" rel="<%= ID %>"><i class="fa fa-plus"></i> Update</button>
+		</div>
+	</form>
+
+</div>
