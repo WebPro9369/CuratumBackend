@@ -1,0 +1,64 @@
+label.ui-link-selector {
+	width: 100%;
+}
+label.ui-link-selector > ul {
+	float: right;
+	padding-left: 10px;
+	margin-bottom: 0px;
+}
+label.ui-link-selector > ul > li {
+	display: inline-block;
+	list-style: none;
+	margin: auto 5px;
+	cursor: pointer;
+}
+
+label.ui-link-selector > ul > li > span {
+	display: inline-block;
+	position: relative;
+	padding: 0px 6px;
+	color: #939393;
+}
+label.ui-link-selector > ul > li.active > span {
+	color: #319db5;
+}
+label.ui-link-selector > ul > li.invalid > span {
+	color: #a94442;
+}
+label.ui-link-selector > ul > li.selected > span {
+	color: #121212;
+}
+
+label.ui-link-selector > ul > li > span::before {
+	background: #566473 none repeat scroll 0 0;
+	content: "";
+	height: 3px;
+	left: 0;
+	position: absolute;
+	top: 23px;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	width: 100%;
+}
+
+label.ui-link-selector > ul > li.selected > span::before {
+	transform: scale(1);
+	width: 100%;
+}
+
+label.ui-link-selector > ul > li > span::before {
+	background-color: #319db5;
+}
+
+
+label.ui-link-selector > ul > li:first-child {
+	margin-left: 0px;
+}
+label.ui-link-selector > ul > li:last-child {
+	margin-right: 0px;
+}
+label.ui-link-selector > ul > li:hover,
+label.ui-link-selector > ul > li.active,
+label.ui-link-selector > ul > li.active:hover {
+	color: #2c7ea1;
+}
